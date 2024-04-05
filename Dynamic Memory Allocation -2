@@ -2,6 +2,9 @@
 using namespace std;
 
 int main(){
+// Here we learnt about how to create a a 2-d array dynamically
+    //how to take input/output
+    // memory free kaise kare
 
     // crating a 2d array
 
@@ -33,6 +36,13 @@ int main(){
         }
         cout<<endl;
     }
+
+ // releasing memory
+    for(int i=0; i<row; i++){
+        delete []arr[i];
+    }
+
+    delete []arr;
 
 
     return 0;
